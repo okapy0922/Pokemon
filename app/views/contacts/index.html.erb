@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+<h1>問い合わせ一覧</h1>
+
+<% @contacts.each do |contact| %>
+  <p>名前:<%= contact.name %></p>
+  <p>メールアドレス:<%= contact.email %></p>
+  <p>本文:<%= contact.content %></p>
+<% end %>
+  </div>
+</div>
+<div id="blogpage-top-btn" class="page-top-btn">
+    <p><a class="move-page-top" id="move-page-top">▲</a></p>
+</div>
